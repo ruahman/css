@@ -1,6 +1,6 @@
-p {
+/* p {
   font-size: 24px;
-}
+} */
 
 .message {
   color: red;
@@ -109,4 +109,81 @@ a.link:active {
   display: inline-block;
   height: 100px;
   width: 200px;
+}
+
+#laravel {
+  /* position: absolute; */
+  position: fixed;
+  bottom: 200px;
+  /* left: 0px; */
+  right: 0;
+  width: 100px;
+}
+
+#vue {
+  position: sticky;
+  top: 0;
+  width: 300px;
+}
+
+#wrapper {
+  width: 250px;
+  height: 100px;
+  overflow: auto;
+  /* overflow: scroll; */
+  /* overflow: hidden; */
+}
+
+.float {
+  /* float: right; */
+  float: left;
+  width: 100px;
+}
+
+.float-parent {
+  width: 500px;
+}
+
+.border-box-sizing {
+  width: 700px;
+  height: 500px;
+  background-color: coral;
+  border: 10px dotted dodgerblue;
+  box-sizing: content-box;
+  /* box-sizing: border-box; */
+  padding: 20px;
+}
+
+.border-box-sizing > img {
+  width: 100%;
+  /* display: none; */
+}
+
+.psuedo-test > li:last-child {
+  color: red;
+}
+
+.psuedo-test > li:nth-child(3) {
+  color: blue;
+}
+
+.psuedo-test > li:first-child {
+  color: pink;
+}
+
+article.psuedo-content > p::before {
+  content: 'λ';
+  color: red;
+}
+
+article.psuedo-content > p::after {
+  content: '🐟';
+  color: blue;
+}
+
+p.text-overflow {
+  width: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
