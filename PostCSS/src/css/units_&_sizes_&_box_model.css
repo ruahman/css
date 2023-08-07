@@ -1,0 +1,26 @@
+/* basic css reset */
+* {
+  margin: 0;
+  padding: 0;
+  /* include border and padding in width and height */
+  box-sizing: border-box;
+}
+
+header {
+  border: 2px dashed red;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+
+p {
+  /* set font-size to twice the root font size in browser */
+  font-size: 2rem;
+
+  /* em makes sence because we want to set padding relative to font-size of element */
+  padding: 1em;
+}
+
+main {
+  /* set to half the width of the viewport */
+  width: 50vw;
+}

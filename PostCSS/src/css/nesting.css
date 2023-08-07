@@ -1,0 +1,37 @@
+.test-nav {
+  padding: 1rem;
+
+  /* nested items must proceded a css symbol, &, >, 
+  &: is the parent symbol
+  */
+  & ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+
+  /* & css symbol is only used for specifying element */
+  & a {
+    color: red;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  /* you don't need css symbols for nested clases??? */
+  .login {
+    color: blue;
+  }
+}
+
+.hero {
+  font-size: 1.25rem;
+  padding: 10rem 0;
+
+  /* you can embed media queries in nested classes */
+  @media (min-width: 768px) {
+    font-size: 1.5rem;
+  }
+}

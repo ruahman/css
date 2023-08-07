@@ -1,0 +1,24 @@
+/* think of variable as new properties and have to be defined in a selector.
+:root is the root element of your page,
+thes are now global properties */
+:root {
+  --dark: #1a1a1a;
+  --light: #f2f2f2;
+  --foreground: var(--light);
+  --background: var(--dark);
+}
+
+p {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.blue {
+  --background: blue;
+  --foreground: red;
+}
+
+.red {
+  --background: red;
+  --foreground: blue;
+}
