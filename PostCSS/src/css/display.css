@@ -1,0 +1,18 @@
+.block {
+  display: block;
+  background-color: red;
+}
+
+.inline {
+  display: inline;
+  background-color: green;
+  padding: 1em;
+}
+
+/* sort of a hybrid between block and inline */
+.inline-block {
+  display: inline-block;
+  background-color: blue;
+  margin: 1em;
+  padding: 1em;
+}

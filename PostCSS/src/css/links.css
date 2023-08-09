@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+  cursor: not-allowed;
+  color: red;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: blue;
+}
+
+a:hover {
+  color: green;
+}

@@ -1,0 +1,17 @@
+ol {
+  list-style-type: lower-greek;
+}
+
+ul {
+  list-style-type: square;
+  text-align: center;
+}
+
+ul li:nth-child(2) {
+  color: red;
+}
+
+ul#m ::marker {
+  color: blue;
+  content: "test";
+}
