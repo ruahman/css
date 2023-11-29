@@ -1,8 +1,14 @@
-import postcssImport from "postcss-import";
 import autoprefixer from "autoprefixer";
 import postcssPresetEnv from "postcss-preset-env";
-import postcssNesting from "postcss-nesting";
+import postcssMixins from "postcss-mixins";
+import postcssImport from "postcss-import";
 
+// setup the plugins you want to use
 export default {
-  plugins: [postcssImport, autoprefixer, postcssPresetEnv, postcssNesting],
+  plugins: [
+    autoprefixer, // auto prefex vender css rules
+    postcssPresetEnv({ stage: 2 }), // add polyfills for modern css features
+    postcssMixins, // allow mixins
+    postcssImport, //  allow importing css files
+  ],
 };

@@ -1,0 +1,16 @@
+
+body {
+  & p {
+    color: red;
+  }
+}
+
+body {
+  & div {
+    color: red;
+  }
+}
+
+body {
+  display: grid;
+}

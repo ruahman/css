@@ -1,19 +1,34 @@
-@import "./nesting.css";
-@import "./variables.css";
+ @import 'import.css';
 
-h1 {
-  color: Red;
-}
+ /* this is a comment */
+ h1 {
+   color: blue;
+   /* color: red; */
+ }
 
+ /* class */
+ .title {
+   color: red;
+ }
 
-.title {
-  color: Blue;
-}
+ /* id */
+ #titleId {
+   color: yellow;
+ }
 
-#titleID {
-  color: Green;
-}
+ /* select elements by their attributes */
+ [href] {
+   color: pink;
+ }
 
-[href] {  
-  color: Pink;
+ /* grouping selectors */
+ .title,
+ #titleId {
+   font-style: italic;
+ }
+
+ /* adjacent selectors */  
+ /* sibline is right after */ 
+ .h1 + .h2 { 
+  color: red;  
 }
