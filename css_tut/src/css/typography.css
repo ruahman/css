@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"); */
 
 body {
   padding: 25%;
@@ -9,23 +9,28 @@ body {
 
   /* Courier New is first choice. the rest are fallbacks */
   /* font-family: "Courier New", Courier, monospace; */
-  font-family: "Roboto", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: 'Open Sans', sans-serif;
 }
 
 p {
+  /* font-style: italic; */
+  /* font-weight: 700; */
+  /* font-size: 50px; */
+  line-height: 1.2;
+
+
   /* text-decoration: underline; */
   /* text-decoration: line-through; */
   text-decoration: none;
 
   /* text-transform: capitalize; */
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 
   /* text-align: right; */
-  text-align: center;
+  /* text-align: center; */
 
-  line-height: 1.5;
+  /* line-height: 1.5; */
 
-  font-weight: bold;
 
-  font-style: italic;
 }

@@ -1,34 +1,59 @@
- @import 'import.css';
+@import 'import.css';
 
- /* this is a comment */
- h1 {
-   color: blue;
-   /* color: red; */
- }
+body {
+  background-color: gray;
+}
 
- /* class */
- .title {
-   color: red;
- }
+/* this is a comment */
+h1 {
+  color: blue;
+  /* color: red; */
+}
 
- /* id */
- #titleId {
-   color: yellow;
- }
+/* class */
+.title {
+  color: red;
+}
 
- /* select elements by their attributes */
- [href] {
-   color: pink;
- }
+/* id */
+#titleId {
+  color: yellow;
+}
 
- /* grouping selectors */
- .title,
- #titleId {
-   font-style: italic;
- }
+/* select elements by their attributes */
+[href] {
+  color: pink;
+}
 
- /* adjacent selectors */  
- /* sibline is right after */ 
- .h1 + .h2 { 
+/* grouping selectors */
+.title,
+#titleId {
+  font-style: italic;
+}
+
+/* adjacent siblin selectors */  
+/* sibline is right after */ 
+.h1 + .h2 { 
   color: red;  
+}
+
+/* general siblin selector */
+.h1 ~ .h3 {
+  color: green;
+}
+
+/* child selector */
+.parent > .h4 {
+  color: blue;
+}
+
+/* desendent selector */ 
+.parent .descendent {
+  color: pink;
+}
+
+/* universal selector */ 
+* { 
+  margin: 0;
+  padding: 0;
 }
