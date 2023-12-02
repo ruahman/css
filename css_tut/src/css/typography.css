@@ -18,19 +18,18 @@ p {
   /* font-weight: 700; */
   /* font-size: 50px; */
   line-height: 1.2;
-
-
-  /* text-decoration: underline; */
-  /* text-decoration: line-through; */
-  text-decoration: none;
-
+  letter-spacing: 5px;
   /* text-transform: capitalize; */
-  /* text-transform: uppercase; */
+  /* text-decoration: line-through; */
+  /* text-decoration-color: red; */
+  /* text-decoration-style: wavy; */
+  /* text-decoration-thickness: 5px; */
+  text-decoration: underline red wavy 2px; // does this work???
 
-  /* text-align: right; */
+  text-align: right;
+  max-width: 60ch;  
   /* text-align: center; */
 
-  /* line-height: 1.5; */
 
 
 }
