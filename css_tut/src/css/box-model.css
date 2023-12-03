@@ -1,0 +1,48 @@
+/* make sure all elementes get border box, so that we have consistnecy in sizing */
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 40px;
+}
+
+.title-1 {
+  /* margin-top: 100px; */
+  /* margin-bottom: 100px; */
+  /* margin-left: 100px; */
+  /* margin-right: 100px; */
+  margin: 50px 25px 200px 50px;
+  padding: 25px 50px;
+  background-color: pink;
+}
+
+button {
+  /* remove the default properties for this element */
+  all: unset; 
+  font-size: 24px;
+  margin: 50px;
+  background-color: purple;
+  padding: 16px 24px;
+  border: 5px solid black;
+  width: 300px;
+  height: 100px;
+}
+
+div {
+  font-size: 24px;
+  background-color: green;
+  /* BOX-MODEL */ 
+  width: 300px;
+  height: 100px;
+  padding: 16px;
+  border: 5px solid black;
+  margin: 50px;
+
+  /* border and padding are included in size now */
+  /* box-sizing: border-box; */
+}
