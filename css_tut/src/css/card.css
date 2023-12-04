@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0; 
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+  /* by default button does not inherit their properties */
+  color: inherit;
+}
+
+.card {
+  border: 1px solid red;
+  width: 600px;
+  background: #000;
+  color: #fff;
+  padding: 16px;
+  border-radius: 10px;
+  /* center card horizontaly, adds margin and left and right till centered */
+  margin: 100px auto 0;
+}
+
+.name {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 2.5;
+  color: #808080;
+}
+
+.title {
+  margin: 16px 0;
+  text-transform: capitalize;
+}
+
+.description {
+  max-width: 60ch;
+  color: #808080;
+}
+
+.btn {
+  background-color: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-weight: 700;
+  margin-top: 16px;
+}
+
+
+
+
+
+
+
