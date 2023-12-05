@@ -1,0 +1,67 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+html {
+  /* dont do this, use the font size from your browser */
+  font-size: 16px;
+}
+
+body {
+  height: 50vh;
+  border: 5px solid blue;
+}
+
+ul {
+  background-color: lightblue;
+  list-style: none;
+  /* root element, font size of root element ???,
+     use rem for defining font-size */
+  font-size: 1rem;
+  padding: 0;
+  /* relative to the font-size of it's element, or parent,
+     its good for padding and margins. */
+  padding-top: 1em;
+}
+
+.btn {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+}
+
+.hero {
+  border: 5px solid red;
+  /* dvh (device view port), work with mobile and desktop, addjusts to navbar */
+  height: 200dvh;
+  /* percentages are relative to their parent */ 
+  /* height: 100%; */
+  /* don't do this, it does not account for scroll bar if content need to scroll */
+  /* width: 100dvh; */
+}
+
+.title {
+  border: 5px solid green;
+  background-color: lightgreen;
+  height: 50%;
+}
+
+.description {
+  /* text is readable between 45 and 75 charecters wide */
+  max-width: 60ch;
+}
+
+
+
