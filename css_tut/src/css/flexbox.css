@@ -49,8 +49,31 @@ button {
 
 
 .container {
+  height: 500px;
+  width: 600px;
+  border: 5px solid black;
+  margin: 0 auto;
   /* place items in main-axis, default is horizontal/row */
   display: flex;
+
+  /* this sets the main axis */
+  /* flex-direction: row; */
+
+  /* align elements along the main axis */
+  /* justify-content: space-evenly; */
+  justify-content: center;
+
+  /* align items along cross axis */ 
+  align-items: center;
+
+  /* wrap items when there is no more space */
+  /* flex-wrap: wrap; */
+
+  /* align wrap items along cross axis */
+  /* align-content: center; */
+
+  /* add space between items */
+  /* gap: 16px; */
 }
 
 
@@ -60,3 +83,37 @@ button {
   border: 5px solid red;
   background-color: pink;
 }
+
+.item-1 {
+  /* allows items to grow if there is space */
+  /* flex-grow: 1; */
+
+  /* basis width or height for flex item */  
+  /* flex-basis: 200px; */
+
+  /* flex shorthand: grow, srink, basis */ 
+  /* flex: 1 1 0; */
+
+  /* just align this item along the cross axis */
+  /* align-self: flex-end; */
+
+  /* arange the order of item along main axis, you should do this in the html though */
+  order: 3;
+}
+
+.item-2 { 
+  /* allows items to grow if there is space */
+  /* flex-grow: 5; */
+  /* cause this item to shrink faster in space is shrinking */
+  /* flex-shrink: 5; */
+  order: 2;
+}
+
+.item-3 {
+  /* allows items to grow if there is space */
+  /* flex-grow: 1; */
+  order: 1;
+}
+
+
+
