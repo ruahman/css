@@ -1,0 +1,77 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  /* use body not default */
+  font-family: inherit;
+}
+
+.header {
+  width: 90%;
+  /* margin: 0 auto; */
+  margin-inline: auto;
+  padding: 1rem 0;
+  display: flex;
+  flex-direction: row;
+
+  /* justify along main axis */
+  /* justify-content: space-between; */
+
+  /* align items along cross axis */
+  align-items: center;
+}
+
+.title {
+  /* base font on root element */
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.menu {
+  display: flex;
+  /* add gap between items */
+  gap: 1rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.btn-container {
+  display: flex;
+  gap: 1rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+.btn {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+}
+
+
+
+
+
