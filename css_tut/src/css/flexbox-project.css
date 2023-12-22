@@ -212,6 +212,19 @@ button {
   margin: 1rem auto;
 }
 
+/* footer */
+.footer {
+  margin-top: 10rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.footer__title {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
 /* utility */
 .btn {
   text-decoration: none;
