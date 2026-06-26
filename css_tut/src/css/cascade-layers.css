@@ -1,0 +1,49 @@
+/* Declare layer order upfront — later layers win */
+@layer base, components, utilities;
+
+@layer base {
+  .demo-text {
+    color: blue;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0.75rem;
+    border-radius: 6px;
+    margin: 0.5rem 0;
+    background: #f5f5f5;
+  }
+}
+
+@layer components {
+  .demo-text {
+    color: green;
+    font-size: 1.1rem;
+  }
+}
+
+@layer utilities {
+  .demo-text {
+    color: red;
+  }
+}
+
+/* Unlayered styles always beat @layer rules */
+.demo-override {
+  color: purple;
+}
+
+/* Two competing theme layers */
+@layer theme-a {
+  .layer-box { background: #4a90d9; }
+}
+
+@layer theme-b {
+  .layer-box { background: #e74c3c; }
+}
+
+.layer-box {
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin: 0.5rem 0;
+  font-weight: 600;
+}

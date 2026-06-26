@@ -1,0 +1,66 @@
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; line-height: 1.5; }
+
+.shadow-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.shadow-box {
+  width: 160px;
+  height: 110px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.78rem;
+  color: #444;
+}
+
+.s-basic { box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2); }
+.s-spread { box-shadow: 0 0 0 4px #4a90d9; }
+.s-inset { box-shadow: inset 4px 4px 12px rgba(0, 0, 0, 0.25); }
+.s-multiple {
+  box-shadow:
+    4px 4px 8px rgba(0, 0, 0, 0.15),
+    -4px -4px 8px rgba(74, 144, 217, 0.25);
+}
+.s-colored { box-shadow: 6px 6px 20px rgba(155, 89, 182, 0.5); }
+.s-lifted {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.25s ease, transform 0.25s ease;
+  cursor: pointer;
+}
+.s-lifted:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12), 0 24px 48px rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px);
+}
+
+.text-shadow-demo {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0.75rem 0;
+  color: #1a1a1a;
+}
+
+.ts-basic { text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); }
+.ts-glow {
+  text-shadow: 0 0 10px #4a90d9, 0 0 20px #4a90d9, 0 0 40px #4a90d9;
+  color: white;
+  background: #111;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+}
+.ts-multiple {
+  text-shadow:
+    1px 1px 0 #bbb,
+    2px 2px 0 #aaa,
+    3px 3px 0 #999,
+    4px 4px 4px rgba(0, 0, 0, 0.2);
+  color: #333;
+}

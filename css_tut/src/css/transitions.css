@@ -1,0 +1,64 @@
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+.transition-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1.5rem 0;
+}
+
+.t-box {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  line-height: 1.4;
+}
+
+.t-color {
+  background: #4a90d9;
+  transition: background-color 0.4s ease;
+}
+.t-color:hover { background: #e74c3c; }
+
+.t-scale {
+  background: #2ecc71;
+  transition: transform 0.3s ease;
+}
+.t-scale:hover { transform: scale(1.2); }
+
+.t-opacity {
+  background: #9b59b6;
+  transition: opacity 0.3s ease;
+}
+.t-opacity:hover { opacity: 0.3; }
+
+.t-border {
+  background: #f39c12;
+  transition: border-radius 0.4s ease;
+}
+.t-border:hover { border-radius: 50%; }
+
+.t-multi {
+  background: #e74c3c;
+  transition: background-color 0.3s ease, transform 0.3s ease, border-radius 0.3s ease;
+}
+.t-multi:hover {
+  background: #4a90d9;
+  transform: rotate(45deg);
+  border-radius: 50%;
+}
+
+.t-delay {
+  background: #1a1a1a;
+  transition: background-color 0.3s ease 0.5s;
+}
+.t-delay:hover { background: #f39c12; }

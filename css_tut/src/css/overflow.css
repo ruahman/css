@@ -1,0 +1,46 @@
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; line-height: 1.5; }
+
+.overflow-demos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.overflow-box {
+  width: 200px;
+  height: 110px;
+  border: 2px solid #333;
+  padding: 0.5rem;
+  background: #f5f5f5;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.ov-visible { overflow: visible; }
+.ov-hidden { overflow: hidden; }
+.ov-scroll { overflow: scroll; }
+.ov-auto { overflow: auto; }
+
+.text-overflow-demo {
+  width: 250px;
+  border: 2px solid #333;
+  padding: 0.5rem;
+  background: #f5f5f5;
+  margin: 0.5rem 0;
+}
+
+.te-clip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
+  font-size: 0.85rem;
+}
+
+.te-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.85rem;
+}

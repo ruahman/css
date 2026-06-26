@@ -1,0 +1,63 @@
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+.bg-demo {
+  height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  border-radius: 8px;
+  margin: 0.5rem 0 1.25rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.bg-color {
+  background-color: #4a90d9;
+}
+
+.bg-linear {
+  background: linear-gradient(135deg, #4a90d9, #9b59b6);
+}
+
+.bg-radial {
+  background: radial-gradient(circle, #f39c12, #e74c3c);
+}
+
+.bg-multi-stop {
+  background: linear-gradient(
+    90deg,
+    #e74c3c 0%,
+    #f39c12 25%,
+    #2ecc71 50%,
+    #4a90d9 75%,
+    #9b59b6 100%
+  );
+}
+
+.bg-image {
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='8' fill='white' fill-opacity='0.2'/%3E%3C/svg%3E");
+  background-color: #4a90d9;
+  background-repeat: repeat;
+  background-size: 40px 40px;
+}
+
+.bg-cover {
+  background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-image: radial-gradient(
+    circle at 30% 50%,
+    rgba(255, 255, 255, 0.4) 0%,
+    transparent 55%
+  );
+  background-color: #2ecc71;
+  background-repeat: no-repeat;
+  background-size: 160px 160px;
+  background-position: center left;
+}

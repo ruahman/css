@@ -1,0 +1,43 @@
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; }
+
+.transform-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem 2rem;
+  padding: 3rem 1rem;
+  align-items: center;
+}
+
+.tr-box {
+  width: 120px;
+  height: 120px;
+  background: #4a90d9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.85rem;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.tr-translate { transform: translate(20px, -10px); }
+
+.tr-rotate { transform: rotate(45deg); background: #e74c3c; }
+
+.tr-scale { transform: scale(1.3); background: #2ecc71; }
+
+.tr-skew { transform: skew(15deg, 5deg); background: #f39c12; }
+
+.tr-origin {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  background: #9b59b6;
+}
+
+.tr-combined {
+  transform: translate(10px, 10px) rotate(15deg) scale(1.1);
+  background: #1a1a1a;
+}

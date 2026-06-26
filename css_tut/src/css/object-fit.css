@@ -1,0 +1,35 @@
+*, *::before, *::after { box-sizing: border-box; }
+* { margin: 0; padding: 0; line-height: 1.5; }
+
+.of-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem 0;
+  align-items: flex-start;
+}
+
+.of-container {
+  width: 200px;
+  height: 150px;
+  border: 2px solid #333;
+  overflow: hidden;
+  background: #f0f0f0;
+}
+
+.of-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.of-fill img { object-fit: fill; }
+.of-contain img { object-fit: contain; }
+.of-cover img { object-fit: cover; }
+.of-none img { object-fit: none; }
+.of-scale-down img { object-fit: scale-down; }
+
+.of-position img {
+  object-fit: cover;
+  object-position: top center;
+}

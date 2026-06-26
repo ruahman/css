@@ -1,16 +1,12 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"); */
 
 body {
-  padding: 25%;
-
-  /* usualy you want to set this in the body */
-  /* font-family: sans-serif; */
-  /* font-family: monospace; */
-
-  /* Courier New is first choice. the rest are fallbacks */
-  /* font-family: "Courier New", Courier, monospace; */
-  /* font-family: "Roboto", sans-serif; */
   font-family: 'Open Sans', sans-serif;
+}
+
+/* wrapper class so body padding only affects the typography demo, not the whole app */
+.typography-content {
+  padding: 25%;
 }
 
 p {
